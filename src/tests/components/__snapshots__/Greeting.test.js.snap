@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Greeting component should render greeting component propely 1`] = `
+<DocumentFragment>
+  <div>
+    <h4>
+      Welcome to L.M.S - Your Library Managment System
+    </h4>
+  </div>
+</DocumentFragment>
+`;
