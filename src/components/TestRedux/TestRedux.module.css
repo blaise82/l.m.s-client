@@ -1,0 +1,23 @@
+
+.IncrementBtn {
+	background-color:  green;
+    border: none;
+    color: black;
+    outline: none;
+    cursor: pointer;
+    font: inherit;
+    padding: 20px;
+    margin: 20px;
+    font-weight: bold;
+}
+.DecrementBtn {
+	background-color: red;
+    border: none;
+    color: black;
+    outline: none;
+    cursor: pointer;
+    font: inherit;
+    padding: 20px;
+    margin: 20px;
+    font-weight: bold;
+}
