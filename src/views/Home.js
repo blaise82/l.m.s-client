@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import classes from "../styles/Home.module.css";
-import { BrowserRouter, Link } from "react-router-dom";
+import { BrowserRouter, Link, Redirect } from "react-router-dom";
 import axios from "axios";
 
 export default class Home extends Component {
@@ -11,8 +11,42 @@ export default class Home extends Component {
       emailError: "",
       password: "",
       passwordError: "",
+      isLoggedIn : false
     };
   }
+
+  onSubmit = async (e) => {
+    e.preventDefault();
+    const error = await this.validate();
+    if (!error) {
+      const send = {
+        email: this.state.email,
+        password: this.state.password,
+      };
+
+      await axios
+        .post(
+          `https://lms-server-octopus.herokuapp.com/api/v1/auth/signin`,
+          send
+        )
+        .then((res) => {
+          localStorage.setItem("token", res.data.data.token);
+          this.setState({
+            email: "",
+            password: "",
+          });
+          this.setState({
+            isLoggedIn: true
+          })
+        })
+        .catch((error) => {
+          this.setState({
+            passwordError: error.response.data.error,
+            emailError: error.response.data.error,
+          });
+        });
+    }
+  };
   validate = () => {
     let isError = false;
     const errors = {
@@ -35,44 +69,17 @@ export default class Home extends Component {
 
     return isError;
   };
-
-  onSubmit = async (e) => {
-    e.preventDefault();
-    const error = await this.validate();
-    if (!error) {
-      const send = {
-        email: this.state.email,
-        password: this.state.password,
-      };
-
-      await axios
-        .post(
-          `https://lms-server-octopus.herokuapp.com/api/v1/auth/signin`,
-          send
-        )
-        .then((res) => {
-          localStorage.setItem("token", res.data.data.token);
-          this.setState({
-            email: "",
-            password: "",
-          });
-          // redirect comes in here
-        })
-        .catch((error) => {
-          this.setState({
-            passwordError: error.response.data.error,
-            emailError: error.response.data.error,
-          });
-        });
-    }
-  };
   change = (e) => {
     this.setState({
       [e.target.name]: e.target.value,
     });
   };
   render() {
-    return (
+    return this.state.isLoggedIn ?(
+      <BrowserRouter>
+        <Redirect to="add-section" />
+      </BrowserRouter>
+    ): (
       <div>
         <div className={classes.form}>
           <div className={classes.head}>
@@ -121,7 +128,7 @@ export default class Home extends Component {
               </li>
               <div className={classes.action}>
                 <BrowserRouter>
-                  <Link to="/" className={classes.link}>
+                  <Link to="/signup" className={classes.link}>
                     Have no account??
                   </Link>
                 </BrowserRouter>
