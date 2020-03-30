@@ -3,9 +3,30 @@
 exports[`Greeting component should render greeting component propely 1`] = `
 <DocumentFragment>
   <div>
-    <h4>
+    <h1
+      class="Heading"
+    >
       Welcome to L.M.S - Your Library Managment System
-    </h4>
+    </h1>
+    <a
+      href="/signin"
+    >
+      <button
+        class="Button"
+      >
+        Sign In
+      </button>
+    </a>
+     Or  
+    <a
+      href="/signup"
+    >
+      <button
+        class="Button"
+      >
+        Sign Up
+      </button>
+    </a>
   </div>
 </DocumentFragment>
 `;

@@ -1,7 +1,7 @@
 import React from 'react'
 import { Provider } from 'react-redux';
 import {render} from '@testing-library/react'
-import Greeting from '../../components/greeting/Greeting';
+import Greeting from '../../views/Greeting';
 import store from '../../redux/store/index';
  
 describe('Greeting component', () => {
