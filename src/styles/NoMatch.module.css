@@ -1,0 +1,11 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.svg {
+    width: 40%;
+    height: 30vh;
+    margin-top: 30vh;
+    margin-left:30%
+}

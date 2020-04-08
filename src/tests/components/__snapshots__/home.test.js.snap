@@ -1,0 +1,107 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders the component 1`] = `
+<DocumentFragment>
+  <div>
+    <div
+      class="form"
+    >
+      <div
+        class="head"
+      >
+        <p
+          class="title"
+        >
+          L.M.S - Sign in
+        </p>
+        <p
+          class="sub_title"
+        >
+          Please fill the form
+        </p>
+      </div>
+      <form>
+        <ul>
+          <li
+            class="input_wrap"
+          >
+            <label
+              class="label"
+              for="email"
+            >
+              Email address
+            </label>
+            <div
+              class="input_dev"
+            >
+              <input
+                aria-label="email"
+                class="input"
+                name="email"
+                placeholder="Enter email"
+                type="text"
+                value=""
+              />
+            </div>
+            <p
+              aria-label="emailError"
+              class="message"
+            />
+          </li>
+          <li
+            class="input_wrap"
+          >
+            <label
+              class="label"
+              for="email"
+            >
+              Password
+            </label>
+            <div
+              class="input_dev"
+            >
+              <input
+                aria-label="password"
+                class="input"
+                name="password"
+                placeholder="Enter password"
+                type="password"
+                value=""
+              />
+            </div>
+            <p
+              aria-label="passwordError"
+              class="message"
+            />
+          </li>
+          <div
+            class="action"
+          >
+            <a
+              class="link"
+              href="/"
+            >
+              Have no account??
+            </a>
+            <button
+              aria-label="submit"
+              class="button"
+            >
+              sign in
+            </button>
+          </div>
+        </ul>
+      </form>
+    </div>
+    <div
+      class="one"
+    />
+    <div
+      class="two"
+    />
+    <div
+      class="three"
+    />
+  </div>
+</DocumentFragment>
+`;
