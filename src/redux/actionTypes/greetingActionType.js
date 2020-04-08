@@ -1,5 +1,5 @@
-const GREETING= 'GREETING';
+const GREETING = "GREETING";
 
-export {
-    GREETING
-}
+export { GREETING };
+
+export const USER_LOGGED_IN = "USER_LOGGED_IN";
