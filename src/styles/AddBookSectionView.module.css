@@ -1,0 +1,163 @@
+body {
+	padding: 0;
+	margin: 0;
+    font-family: Helvetica Neue;
+    overflow: hidden;
+}
+div,
+button,
+ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	outline: none;
+}
+
+.form {
+	width: 469px;
+	height: auto;
+	margin-left: auto;
+    margin-right: auto;
+    margin-top: 23vh;
+}
+.head {
+	width: 100%;
+	height: auto;
+	text-align: center;
+}
+.title {
+	font-family: Helvetica Neue;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 36px;
+	line-height: 24px;
+	color: #2c3e50;
+	margin-bottom: 10px;
+}
+.sub_title {
+    font-family: Helvetica Neue;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 24px;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 1.25px; 
+    color: #5B5A5A;
+	margin-bottom: 20px;
+}
+
+.input_wrap {
+	height: auto;
+	width: 100%;
+	float: left;
+	margin-top: 30px;
+}
+.label {
+	float: left;
+	margin-top: -25px;
+	height: 18px;
+	color: #373A3C;
+	font-size: 14px;
+	overflow: hidden;
+}
+.input_dev {
+	float: left;
+	height: auto;
+	width: 100%;
+	padding: 9px;
+	border: 1px solid #cccccc;
+	margin-bottom: 30px;
+	border-radius: 3px;
+}
+.input {
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	width: 100%;
+	display: block;
+	outline: none;
+	border: none;
+	height: 25px;
+	line-height: 25px;
+	font-size: 16px;
+	padding: 0;
+}
+
+
+.ErrorMessage {
+	float: left;
+	margin-top: 30px;
+	background: #ffffff;
+	height: 14px;
+	text-align: center;
+	padding: 2px 5px 2px 5px;
+	color: #b9b9b9;
+	font-size: 14px;
+	overflow: hidden;
+	color:red;
+}
+.Successmessage {
+	float: left;
+	margin-top: 30px;
+	background: #ffffff;
+	height: 20px;
+	padding: 2px 5px 2px 5px;
+	color: #b9b9b9;
+	font-size: 14px;
+	overflow: hidden;
+	color:green;
+}
+.BelowErroMessage {
+	float: left;
+	margin-top: -30px;
+	background: #ffffff;
+	height: 14px;
+	text-align: center;
+	padding: 2px 5px 2px 5px;
+	color: #b9b9b9;
+	font-size: 14px;
+	overflow: hidden;
+	color:red;
+}
+.action{
+    height: auto;
+    width: 100%;
+    margin-top: 10px;
+    float: left;
+    display: flex;
+}
+.link {
+	text-decoration: none;
+	font-family: Helvetica Neue;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 21px;
+	/* identical to box height, or 131% */
+
+	color: #0275d8;
+}
+.button {
+	cursor: pointer;
+	font-family: Helvetica Neue;
+    font-style: normal;
+    margin-right: -18px;
+	font-weight: normal;
+	line-height: 21px;
+	color: #ffffff;
+	margin-left: auto;
+	background-color: #02B1D8;
+    border-radius: 0.5em;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    outline: 0;
+}
+.error{
+	border: 1px solid #0275d8;
+}

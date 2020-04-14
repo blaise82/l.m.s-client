@@ -79,7 +79,7 @@ exports[`renders the component 1`] = `
           >
             <a
               class="link"
-              href="/"
+              href="/signup"
             >
               Have no account??
             </a>
